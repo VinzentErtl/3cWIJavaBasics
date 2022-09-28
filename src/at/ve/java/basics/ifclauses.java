@@ -1,4 +1,4 @@
-package ifclauses;
+package at.ve.java.basics;
 
 import java.util.Random;
 
