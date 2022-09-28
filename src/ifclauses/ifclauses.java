@@ -14,7 +14,7 @@ public class ifclauses {
             System.out.println("Medium");
 
         } else {
-            System.out.println("Large");
+            System.out.println("Largo");
         }
 
     }
