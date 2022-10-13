@@ -1,8 +1,8 @@
-package Bankomat;
+package ATM;
 
 import java.util.Scanner;
 
-public class Bankomat_Beispiel {
+public class ATMexample {
     public static void main(String[] args) {
 
         int balance = 0;
@@ -14,10 +14,8 @@ public class Bankomat_Beispiel {
         System.out.println("4. Ende");
 
 
-
-
         boolean isFinished = false;
-        while (isFinished==false) {
+        while (isFinished == false) {
 
             Scanner scanner = new Scanner(System.in);
             int selection = scanner.nextInt();
@@ -36,7 +34,7 @@ public class Bankomat_Beispiel {
             }
 
             if (selection == 3) {
-                System.out.println("Der Kontostand beträgt: " + balance + "€" );
+                System.out.println("Der Kontostand beträgt: " + balance + "€");
             }
 
 
