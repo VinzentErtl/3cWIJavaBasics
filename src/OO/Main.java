@@ -1,14 +1,13 @@
 package OO;
 
+import static java.awt.Color.white;
+
 public class Main {
     public static void main(String[] args) {
         int a = 7;
 
-        Car c1 = new Car();
-        c1.color = "green";
-        c1.fuelConsumption = 29;
-        c1.serialNumber = "B69420";
-        c1.fuelAmount = 70;
+        Car c1 = new Car(29,50,"green","A2300");
+
 
 
         System.out.println(c1.serialNumber);
@@ -17,8 +16,6 @@ public class Main {
 
         System.out.println(c1.fuelAmount);
         c1.drive();
-        c1.drive();
-        c1.drive();
         System.out.println(c1.fuelAmount);
 
 
@@ -26,5 +23,11 @@ public class Main {
 
         c1.turboBoost();
 
+        c1.honk();
+
+        System.out.println(c1.Range);
     }
+
+    Car c2 = new Car(13, 80, "black", "A22045");
+
 }
