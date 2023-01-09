@@ -8,7 +8,8 @@ public class Main {
 
         Car c1 = new Car(29,50,"green","A2300");
 
-
+        Engine e1 = new Engine(90, Engine.TYPE.DIESEL);
+        e1.drive(60);
 
         System.out.println(c1.serialNumber);
         System.out.println(c1.fuelConsumption);
@@ -20,6 +21,7 @@ public class Main {
 
 
         c1.brake();
+
 
         c1.turboBoost();
 
