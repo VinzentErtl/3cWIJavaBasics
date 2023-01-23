@@ -8,6 +8,20 @@ public class Main {
 
         Car c1 = new Car(29,50,"green","A2300");
 
+        RearMirror m1 = new RearMirror(10,5);
+        RearMirror m2 = new RearMirror(10,5);
+        c1.addMirror(m1);
+        c1.addMirror(m2);
+
+        Tire t1 = new Tire(20, 0);
+        Tire t2 = new Tire(20, 1);
+        Tire t3 = new Tire(20, 2);
+        Tire t4 = new Tire(20,3);
+        c1.addTire(t1);
+        c1.addTire(t2);
+        c1.addTire(t3);
+        c1.addTire(t4);
+
         Engine e1 = new Engine(90, Engine.TYPE.DIESEL);
         e1.drive(60);
 

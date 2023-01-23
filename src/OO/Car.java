@@ -1,17 +1,36 @@
 package OO;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
     //Gedächtnisvariablen
 
     public int fuelConsumption;
+    private List<RearMirror> mirrors;
+    private List<Tire> tires;
     public int fuelAmount;
     public String serialNumber;
     public String color;
     public int Range;
 
 
-    public Car(int fuelConsumption, int fuelAmount, String color, String serialNumber){
+    public Car(int fuelConsumption, int fuelAmount, String serialNumber, String color) {
+        this.fuelConsumption = fuelConsumption;
+        this.fuelAmount = fuelAmount;
+        this.serialNumber = serialNumber;
+        this.color = color;
+        this.mirrors = new ArrayList<>();
+        this.tires = new ArrayList<>();
+    }
 
+    public void addMirror(RearMirror rearMirror) {
+
+        this.mirrors.add(rearMirror);
+    }
+
+    public void addTire(Tire tire) {
+        this.tires.add(tire);
     }
 
     //Methode
