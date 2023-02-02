@@ -1,6 +1,4 @@
-package OO;
-
-import static java.awt.Color.white;
+package OO.Cars;
 
 public class Main {
     public static void main(String[] args) {

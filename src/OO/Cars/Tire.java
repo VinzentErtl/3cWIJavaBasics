@@ -1,10 +1,10 @@
-package OO;
+package OO.Cars;
 
-public class RearMirror {
+public class Tire {
     private int size;
-    private int position; // 0 neutral, -10 nach links, +10 nach rechts gerichtet
+    private int position; // 0 links vorne, 1 rechts vorne, 2 links hinten, 3 rechts hinten
 
-    public RearMirror(int size, int position) {
+    public Tire(int size, int position) {
         this.size = size;
         this.position = position;
     }
