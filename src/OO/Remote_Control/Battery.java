@@ -3,12 +3,16 @@ package OO.Remote_Control;
 public class Battery {
 
     public int memoryStatus;
-    public int battery;
 
-    public Battery(int memoryStatus, int battery) {
+    public Battery(int memoryStatus) {
         this.memoryStatus = memoryStatus;
-        this.battery = battery;
     }
 
-    public void getStatus(int battery)
+    public int getMemoryStatus() {
+        return memoryStatus;
+    }
+
+    public void setMemoryStatus(int memoryStatus) {
+        this.memoryStatus = memoryStatus;
+    }
 }
