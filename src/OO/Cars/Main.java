@@ -20,16 +20,20 @@ public class Main {
         c1.addTire(t3);
         c1.addTire(t4);
 
+        SuperCar s1 = new SuperCar(100,80, "11000", "red", "spoiler1");
+
+        System.out.println(s1.getColor() + s1.getSpoiler());
+
         Engine e1 = new Engine(90, Engine.TYPE.DIESEL);
         e1.drive(60);
 
-        System.out.println(c1.serialNumber);
-        System.out.println(c1.fuelConsumption);
-        System.out.println(c1.color);
+        System.out.println(c1.getSerialNumber());
+        System.out.println(c1.getFuelConsumption());
+        System.out.println(c1.getColor());
 
-        System.out.println(c1.fuelAmount);
+        System.out.println(c1.getFuelAmount());
         c1.drive();
-        System.out.println(c1.fuelAmount);
+        System.out.println(c1.getFuelAmount());
 
 
         c1.brake();
@@ -39,7 +43,7 @@ public class Main {
 
         c1.honk();
 
-        System.out.println(c1.Range);
+        System.out.println(c1.getRange());
     }
 
     Car c2 = new Car(13, 80, "black", "A22045");

@@ -13,9 +13,6 @@ public class Lamp {
         Annealing_element1 = annealing_element1;
         Annealing_element2 = annealing_element2;
         Annealing_element3 = annealing_element3;
-    }
-
-    public void addLightElement(Annealing_element annealing_element){
-        this.
-    }
+    };
 }
+

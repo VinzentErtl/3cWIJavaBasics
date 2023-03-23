@@ -6,13 +6,13 @@ import java.util.List;
 public class Car {
     //Gedächtnisvariablen
 
-    public int fuelConsumption;
+    private int fuelConsumption;
     private List<RearMirror> mirrors;
     private List<Tire> tires;
-    public int fuelAmount;
-    public String serialNumber;
-    public String color;
-    public int Range;
+    private int fuelAmount;
+    private String serialNumber;
+    private String color;
+    private int Range;
 
 
     public Car(int fuelConsumption, int fuelAmount, String serialNumber, String color) {
@@ -79,5 +79,41 @@ public class Car {
 
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
+    }
+
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
+
+    public void setMirrors(List<RearMirror> mirrors) {
+        this.mirrors = mirrors;
+    }
+
+    public List<Tire> getTires() {
+        return tires;
+    }
+
+    public void setTires(List<Tire> tires) {
+        this.tires = tires;
+    }
+
+    public int getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getRange() {
+        return Range;
     }
 }
