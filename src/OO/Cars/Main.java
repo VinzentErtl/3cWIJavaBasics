@@ -23,6 +23,8 @@ public class Main {
         SuperCar s1 = new SuperCar(100,80, "11000", "red", "spoiler1");
 
         System.out.println(s1.getColor() + s1.getSpoiler());
+        s1.drive();
+        s1.stop();
 
         Engine e1 = new Engine(90, Engine.TYPE.DIESEL);
         e1.drive(60);

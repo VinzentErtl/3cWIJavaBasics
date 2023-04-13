@@ -85,6 +85,10 @@ public class Car {
         return fuelConsumption;
     }
 
+    public void stop(){
+        System.out.println("I am Stopping .... car");
+    }
+
     public List<RearMirror> getMirrors() {
         return mirrors;
     }

@@ -16,4 +16,10 @@ public class SuperCar extends Car{
     public void setSpoiler(String spoiler) {
         this.spoiler = spoiler;
     }
+
+    @Override
+    public void drive() {
+        System.out.println("I am driving the SuperCar - Consumption is high");
+        //super.drive();
+    }
 }
